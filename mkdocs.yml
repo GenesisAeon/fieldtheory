@@ -41,3 +41,4 @@ nav:
   - Home: index.md
   - CLI Reference: cli.md
   - Architecture: architecture.md
+  - Changelog: changelog.md
