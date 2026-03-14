@@ -1,0 +1,5 @@
+domains:
+  fieldtheory:
+    lagrangian_baseline: 1.236
+    collapse_threshold: 0.618
+    duality_ratio: 1.618
