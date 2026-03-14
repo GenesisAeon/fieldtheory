@@ -7,7 +7,7 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/fieldtheory)](https://pypi.org/project/fieldtheory/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19025145.svg)](https://doi.org/10.5281/zenodo.19025145)
 
 Derives the full Lagrangian from S∝A/S∝V duality, applies medium-modulation, detects cosmic-moment collapse events and exports to entropy-table.
 
@@ -77,7 +77,7 @@ When `medium-modulation`, `cosmic-moment`, and `entropy-governance` are installe
 
 ---
 
-**DOI** (after Zenodo release): 10.5281/zenodo.XXXXXXX  
-**PyPI**: https://pypi.org/project/fieldtheory/
+**DOI**: [10.5281/zenodo.19025145](https://doi.org/10.5281/zenodo.19025145)
+**PyPI**: `pip install fieldtheory` (oder `pip install "fieldtheory[stack]"` für den vollen GenesisAeon-Stack)
 
 Built with [SymPy](https://www.sympy.org/) · [NumPy](https://numpy.org/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/)
