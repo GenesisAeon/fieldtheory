@@ -1,37 +1,43 @@
-# Diamond Setup
+# fieldtheory
 
-**Universal Python project scaffold** — generate professional, CI-ready project skeletons in seconds.
+**The unifying field theory of the GenesisAeon stack.**
 
-No cookiecutter, no Jinja2, no magic. Just a clean CLI, sensible templates, and a validator that keeps your projects healthy.
+Derives the full Lagrangian from S∝A/S∝V duality, applies medium-modulation, detects cosmic-moment collapse and exports to entropy-table.
 
 ## Quickstart
 
 ```bash
-pip install diamond-setup
-# or with uv:
-uv tool install diamond-setup
+pip install fieldtheory
+ft simulate --steps 100
+ft lagrangian
 ```
 
-```bash
-diamond scaffold my-new-tool
-cd my-new-tool && uv sync --dev && uv run pytest
+## The Lagrangian
+
+```
+L = S_A·S_V / (S_A + S_V)  −  (1 + δ) / t²
 ```
 
-## Why Diamond Setup?
+| Term | Role |
+|------|------|
+| `S_A·S_V / (S_A + S_V)` | Harmonic duality balance (S∝A ↔ S∝V) |
+| `(1 + δ) / t²` | Depth-weighted collapse potential |
 
-| Feature | diamond-setup | cookiecutter | copier |
-|---------|:---:|:---:|:---:|
-| Zero config needed | ✅ | ❌ | ❌ |
-| Built-in validator | ✅ | ❌ | ❌ |
-| Pure Python templates | ✅ | ❌ | ❌ |
-| `--dry-run` support | ✅ | ❌ | ✅ |
-| Extensible presets | ✅ | ✅ | ✅ |
+## Stack Integration
+
+| Package | Role | Required |
+|---------|------|----------|
+| `medium-modulation` | Modulated entropy computation | Optional |
+| `cosmic-moment` | Collapse event detection | Optional |
+| `entropy-governance` | Duality factor | Optional |
+| `entropy-table` | Result export | Optional |
+
+All integrations degrade gracefully — the core simulation runs standalone.
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `diamond scaffold <name>` | Create a new project |
-| `diamond list-templates` | Show available templates |
-| `diamond validate [path]` | Check a project's health |
-| `diamond version` | Show version |
+| `ft simulate` | Run the unified field simulation |
+| `ft lagrangian` | Display the symbolic Euler-Lagrange equation |
+| `ft version` | Show version |

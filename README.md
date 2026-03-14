@@ -1,84 +1,81 @@
-# diamond-setup
+# fieldtheory
 
-**Universal Python project scaffold** — generate professional, CI-ready skeletons in seconds.
+**The unifying field theory of the GenesisAeon stack.**
 
-[![CI](https://github.com/GenesisAeon/diamond-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/diamond-setup/actions/workflows/ci.yml)
+[![CI](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/fieldtheory)](https://pypi.org/project/fieldtheory/)
 
-No cookiecutter, no Jinja2, no magic. Just a clean CLI that produces a fully working project — `uv sync`, `pytest`, ruff, pre-commit and CI all wired up from second one.
+Derives the full Lagrangian from S∝A/S∝V duality, applies medium-modulation, detects cosmic-moment collapse events and exports to entropy-table.
 
 ---
 
 ## Install
 
 ```bash
-pip install diamond-setup
-# or
-uv tool install diamond-setup
+pip install fieldtheory
+# with full GenesisAeon stack integration:
+pip install "fieldtheory[stack]"
 ```
 
 ## Usage
 
 ```bash
-# New project with the minimal template (default)
-diamond scaffold my-lib
+# Run the unified field simulation
+ft simulate --steps 100
 
-# GenesisAeon preset (adds domains.yaml + entropy-table bridge)
-diamond scaffold my-physics-tool --template genesis --author "Ada Lovelace"
+# Show the symbolic Euler-Lagrange equation
+ft lagrangian
 
-# Preview what would be generated (no files written)
-diamond scaffold my-lib --dry-run
-
-# See all templates
-diamond list-templates
-
-# Validate any project directory
-diamond validate path/to/my-project
-diamond validate          # validates the current directory
+# Override field parameters
+ft simulate --s-a 1.0 --s-v 1.618 --depth 0.5 --threshold 0.618
 ```
 
-## What you get
+## Python API
 
-Running `diamond scaffold my-lib` produces:
+```python
+from fieldtheory.core import simulate_field, derive_lagrangian, modulated_entropy
 
-```
-my-lib/
-├── src/
-│   └── my_lib/
-│       └── __init__.py       # __version__ = "0.1.0"
-├── tests/
-│   ├── __init__.py
-│   └── test_main.py
-├── .github/
-│   └── workflows/
-│       └── ci.yml            # matrix: 3.11 + 3.12
-├── pyproject.toml            # hatchling, ruff, pytest configured
-├── README.md
-├── .gitignore
-└── .pre-commit-config.yaml   # ruff + standard hooks
-```
+# Numerical simulation
+result = simulate_field(steps=200, threshold=0.618)
+print(result["S_mod_mean"])      # mean modulated entropy
+print(result["cosmic_moments"])  # number of collapse events
 
-Then just:
+# Symbolic Lagrangian + Euler-Lagrange equation
+eqs = derive_lagrangian()
+print(eqs["lagrangian"])        # S_A*S_V/(S_A + S_V) - (delta + 1)/t**2
+print(eqs["euler_lagrange"])    # d/dt(∂L/∂Ṡ) - ∂L/∂S = 0
 
-```bash
-cd my-lib
-uv sync --dev
-pre-commit install
-uv run pytest
+# Entropy-table export
+from fieldtheory.entropy_table_bridge import FieldtheoryBridge
+bridge = FieldtheoryBridge()
+bridge.add_relation("S_mod_mean", result["S_mod_mean"])
+bridge.export("domains.yaml")
 ```
 
-## Templates
+## Architecture
 
-| Template | Description |
-|----------|-------------|
-| `minimal` | Clean Python package for everyone |
-| `genesis` | Adds `domains.yaml` + entropy-table bridge (GenesisAeon preset) |
+```
+fieldtheory/
+├── core.py                  # Unified Lagrangian, EL derivation, simulation
+├── cli.py                   # ft simulate / ft lagrangian / ft version
+└── entropy_table_bridge.py  # Export to entropy-table (optional stack dep)
+```
 
-## Extending
+The Lagrangian encodes the S∝A/S∝V duality:
 
-Adding a new template is one Python file. See [docs/templates.md](docs/templates.md).
+```
+L = S_A·S_V / (S_A + S_V)  −  (1 + δ) / t²
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+    harmonic duality balance     collapse potential
+```
+
+When `medium-modulation`, `cosmic-moment`, and `entropy-governance` are installed (`pip install "fieldtheory[stack]"`), their implementations are used transparently. Without them the package falls back to internal implementations — all tests pass either way.
 
 ---
 
-Built with [uv](https://docs.astral.sh/uv/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/)
+**DOI** (after Zenodo release): 10.5281/zenodo.XXXXXXX  
+**PyPI**: https://pypi.org/project/fieldtheory/
+
+Built with [SymPy](https://www.sympy.org/) · [NumPy](https://numpy.org/) · [Typer](https://typer.tiangolo.com/) · [Rich](https://rich.readthedocs.io/)
