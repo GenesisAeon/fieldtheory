@@ -3,9 +3,11 @@
 **The unifying field theory of the GenesisAeon stack.**
 
 [![CI](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-88%25-brightgreen)](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/fieldtheory)](https://pypi.org/project/fieldtheory/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 Derives the full Lagrangian from S∝A/S∝V duality, applies medium-modulation, detects cosmic-moment collapse events and exports to entropy-table.
 
