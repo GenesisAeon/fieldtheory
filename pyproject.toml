@@ -1,7 +1,7 @@
-[project]
+﻿[project]
 name = "fieldtheory"
-version = "0.1.0"
-description = "The unifying field theory of the GenesisAeon stack: full Lagrangian formulation of S∝A/S∝V duality, medium modulation, cosmic-moment collapse and entropy-table integration."
+version = "0.3.1"
+description = "The unifying field theory of the GenesisAeon stack: full Lagrangian formulation of SâˆA/SâˆV duality, medium modulation, cosmic-moment collapse and entropy-table integration."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -68,3 +68,4 @@ addopts = "--cov=fieldtheory --cov-report=term-missing -v"
 [tool.coverage.run]
 source = ["src"]
 omit = ["tests/*"]
+

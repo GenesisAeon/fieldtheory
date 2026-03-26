@@ -1,4 +1,5 @@
-"""fieldtheory – the unifying Lagrangian field theory of the GenesisAeon stack."""
+﻿"""fieldtheory â€“ the unifying Lagrangian field theory of the GenesisAeon stack."""
 
-__version__ = "0.1.0"
+__version__ = "0.3.1"
 __author__ = "GenesisAeon"
+
