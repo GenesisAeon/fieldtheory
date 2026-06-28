@@ -10,8 +10,8 @@ import sympy as sp
 # ---------------------------------------------------------------------------
 
 try:
-    from medium_modulation.core import (
-        modulated_entropy as _ext_modulated_entropy,  # type: ignore[import-not-found]
+    from medium_modulation.core import (  # type: ignore[import-not-found]
+        modulated_entropy as _ext_modulated_entropy,
     )
 
     _HAS_MODULATION = True
