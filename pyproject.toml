@@ -4,14 +4,14 @@ version = "0.3.1"
 description = "The unifying field theory of the GenesisAeon stack: full Lagrangian formulation of SâˆA/SâˆV duality, medium modulation, cosmic-moment collapse and entropy-table integration."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "GenesisAeon Team", email = "team@genesisaeon.org" }]
 keywords = ["field-theory", "lagrangian", "entropy", "sympy", "physics", "genesisaeon"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -33,7 +33,7 @@ stack = [
     "cosmic-moment>=0.1.0",
     "implosive-genesis>=0.4.0",
 ]
-dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.9"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.9", "mypy>=1.13", "types-PyYAML>=6.0"]
 docs = ["mkdocs>=1.6", "mkdocstrings[python]>=0.27", "mkdocs-material>=9.6"]
 
 [project.scripts]
@@ -68,4 +68,11 @@ addopts = "--cov=fieldtheory --cov-report=term-missing -v"
 [tool.coverage.run]
 source = ["src"]
 omit = ["tests/*"]
+
+[tool.mypy]
+python_version = "3.11"
+
+[[tool.mypy.overrides]]
+module = ["sympy", "sympy.*"]
+ignore_missing_imports = true
 

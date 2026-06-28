@@ -5,6 +5,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- **License**: switched from MIT to dual-licensing — code under GPL-3.0-or-later (`LICENSE-CODE`), documentation under CC BY 4.0 (`LICENSE-DOCS`).
+
 ## [0.1.0] – 2026-03-14
 
 ### Added
