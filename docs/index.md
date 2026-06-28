@@ -41,3 +41,7 @@ All integrations degrade gracefully — the core simulation runs standalone.
 | `ft simulate` | Run the unified field simulation |
 | `ft lagrangian` | Display the symbolic Euler-Lagrange equation |
 | `ft version` | Show version |
+
+## License
+
+Code: GPL-3.0-or-later. Documentation (this page included): CC BY 4.0. See the repository's [LICENSE](https://github.com/GenesisAeon/fieldtheory/blob/main/LICENSE) for details.

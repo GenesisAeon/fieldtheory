@@ -5,7 +5,8 @@
 [![CI](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml/badge.svg)](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-88%25-brightgreen)](https://github.com/GenesisAeon/fieldtheory/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPLv3-or-later](https://img.shields.io/badge/code-GPLv3--or--later-blue.svg)](LICENSE-CODE)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS)
 [![PyPI](https://img.shields.io/pypi/v/fieldtheory)](https://pypi.org/project/fieldtheory/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19025145.svg)](https://doi.org/10.5281/zenodo.19025145)
 
@@ -74,6 +75,15 @@ L = S_A·S_V / (S_A + S_V)  −  (1 + δ) / t²
 ```
 
 When `medium-modulation`, `cosmic-moment`, and `entropy-governance` are installed (`pip install "fieldtheory[stack]"`), their implementations are used transparently. Without them the package falls back to internal implementations — all tests pass either way.
+
+## License
+
+fieldtheory is dual-licensed:
+
+- **Code** (everything under `src/`, `tests/`, and other source files) is licensed under the [GNU General Public License v3.0 or later](LICENSE-CODE) (GPL-3.0-or-later).
+- **Documentation** (`docs/`, `README.md`, `README_QUICKSTART.md`, `CHANGELOG.md`) is licensed under [Creative Commons Attribution 4.0 International](LICENSE-DOCS) (CC BY 4.0).
+
+See [LICENSE](LICENSE) for details.
 
 ---
 
