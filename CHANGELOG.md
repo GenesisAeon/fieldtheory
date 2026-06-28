@@ -7,9 +7,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.0] – 2026-06-28
+
 ### Changed
 
 - **License**: switched from MIT to dual-licensing — code under GPL-3.0-or-later (`LICENSE-CODE`), documentation under CC BY 4.0 (`LICENSE-DOCS`).
+- Version bumped to 1.0.0 as part of the GenesisAeon ecosystem-wide v1.0.0 release milestone.
+- Repaired CI workflow: added `mypy`/`types-PyYAML` to dev extras, removed unsupported Python 3.10 from the test matrix, and fixed the docs job to install the `docs` extras.
 
 ## [0.1.0] – 2026-03-14
 
